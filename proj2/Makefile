@@ -1,4 +1,4 @@
-TARGET=proj1
+TARGET=proj2
 
 $(TARGET): $(TARGET).tex
 	latex $(TARGET).tex
