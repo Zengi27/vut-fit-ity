@@ -1,0 +1,66 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage{times}
+\usepackage[utf8]{inputenc}
+\usepackage[czech]{babel}
+\usepackage[left=2cm, text={17cm, 24cm}, top=3cm]{geometry}
+\usepackage[unicode]{hyperref}
+\bibliographystyle{czplain}
+
+\begin{document}
+\begin{titlepage}
+    \begin{center}
+        \textsc{{\Huge Vysoké učení technické v~Brně}\\[0.4em]
+                {\huge Fakulta informačních technologií}}\\
+        \vspace{\stretch{0.382}}
+        {\LARGE Typografie a publikování\,--\,4. projekt}\\[0.3em]
+        {\Huge Bibliografické citácie}
+        \vspace{\stretch{0.618}}
+    \end{center}
+{\Large \today \hfill Ján Homola}
+\end{titlepage}
+
+
+\section{Typografia}
+Typografie je dnes základnou súčasťou našich životov, je vyvrcholením storočí vývoja, pretože písmena, ktoré tvoria písanie slovo sa vyvinuli a vykryštalizovali do bežne používaných písmen \cite{typography_fundamentals}.
+
+Typografiu môžme chápať ako druh umenia alebo zručnosť v~oblasti usporiadavania písmen a znakov.
+V~podstate typografia zahŕňa to ako sú usporiadané jednotlivé slova a písmena, a ako sú zložené vo
+vzťahu k~sebe navźajom a k~danému miestu v~kompozícií \cite{harkins2011basics}. 
+
+Existuje niekoľko nepísaných pravidiel, ktoré by mal dodržiavať každý dobrý dizajnér. Konkrétne príklady je možné nájsť na tejto stránke \cite{typho_rules}.
+
+
+\section{\LaTeX}
+História \LaTeX u začína s~programom, ktorý sa nazýva \TeX a vznikol v~roku 1978 \cite{tex_history}.
+Nejedná sa o~sádzací program, ale skôr o~nádstavbu pre DTP systému \TeX. Pomocou tohto balíka je používanie \TeX u jednoduchšie. Takéto \LaTeX\ dokumenty je potrebné zkompilovať, pretože neprebiehajú interaktívne ako u~iných textových editorov \cite{diplomka_latex}. 
+
+Ako silné stránky \LaTeX u sa považuje napríklad sádzanie matematických výrazov, obrovská presnosť a taktiež možno vytvorenia vlastných makier \cite{martinek_latex}.
+\LaTeX\ obsahuje aj nástroj na automatizáciu použitej literatúry, tento nástroj sa nazýva Bib\TeX \cite{bib}. 
+
+\subsection{Online editory \LaTeX}
+Online editory sú veĺkým prínosom, umožňujú nám pristúpiť k~naším dokumentom, bez toho aby sme museli
+sedieť pri našom počítači. Taktieť nás odbremenie od samotnéj inštalácie editoru
+\cite{diplomka_online_editory}. Medzi online editory patria napríklad \cite{latex_example_editors}:
+
+\begin{itemize}
+    \item Papeeria
+    \item Overleaf
+    \item Authorea
+\end{itemize}
+
+\section{Predspracovanie textovych dát}
+Predspracovanie textových dát pre klasifikáciu pomocou strojového učenia spočíva v~nasledujúcich krokoch \cite{classification}:
+
+\begin{itemize}
+    \item tokenizácia
+    \item odstránenie stop slov
+    \item prevod textu na veľké písmena
+    \item odstránenie šumu
+    \item stematizácia a lematizácia
+\end{itemize}
+
+\newpage
+\renewcommand{\refname}{Literatúra}
+\bibliography{proj4}
+
+\end{document}
